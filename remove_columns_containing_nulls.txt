@@ -1,0 +1,6 @@
+// Remove columns containing only nulls
+unpivot_columns = Table.UnpivotOtherColumns(remove_addendum_total, {}, "Attribute", "Value"),
+column_names = Table.Distinct(unpivot_columns, {"Attribute"})[Attribute],
+Custom1 = Table.SelectColumns(remove_addendum_total, column_names),
+remove_meta = Table.RemoveColumns(Custom1,{"Custom"}),
+            

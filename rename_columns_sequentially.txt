@@ -1,0 +1,7 @@
+        #Renaming columns in a sequence
+		//Since we lost Column2 in the merge, we need to rename the columns
+        column_count = Table.ColumnCount(merge_columns),
+        column_index = List.Numbers(1,  column_count),
+        convert_list_to_column_names  = List.Transform(column_index, each "Column" & Number.ToText(_) ),
+        rename_columns_names = List.Zip({curr_col_names, convert_list_to_column_names}),
+        data_table = Table.RenameColumns(merge_columns, rename_columns_names),
