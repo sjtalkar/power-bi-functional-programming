@@ -1,0 +1,120 @@
+{
+  "config": "{\"version\":\"5.44\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.46\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "HierarchySlicer1458836712039"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"1c993060d781026b3e0d\",\"target\":\"a1af8d6fb399bc0e6c5d\",\"type\":3},{\"source\":\"a1af8d6fb399bc0e6c5d\",\"target\":\"1c993060d781026b3e0d\",\"type\":3}]}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1c993060d781026b3e0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":947.3928033472803,\"y\":37.01824267782427,\"z\":0,\"width\":281.0644351464435,\"height\":91.86008368200837,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimMondelezCalendar.MonthStatus\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MonthStatus\"},\"Name\":\"DimMondelezCalendar.MonthStatus\",\"NativeReferenceName\":\"MonthStatus\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MonthStatus\"}}}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"DimMondelezCalendar.MonthStatus\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DimCompanyCalendar\"}},\"Property\":\"MonthStatus\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Jan 2025'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MonthStatus\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Past Month'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter0d5112002d659c2eee04\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DimCompanyCalendar\"}},\"Property\":\"MonthOffset\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":4,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MonthOffset\"}},\"Right\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":1}]",
+          "height": 91.86,
+          "width": 281.06,
+          "x": 947.39,
+          "y": 37.02,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a1af8d6fb399bc0e6c5d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":555.9591631799163,\"y\":89.11799163179916,\"width\":281.0644351464435,\"height\":363.3271966527197,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DimMondelezCalendar.WeekStatus\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"WeekStatus\"},\"Name\":\"DimMondelezCalendar.WeekStatus\",\"NativeReferenceName\":\"WeekStatus\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"WeekStatus\"}}}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"DimMondelezCalendar.WeekStatus\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DimCompanyCalendar\"}},\"Property\":\"WeekStatus\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'2021-45'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"WeekStatus\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Current Week'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 363.33,
+          "width": 281.06,
+          "x": 555.96,
+          "y": 89.12,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"186L\"}}}}}]}}",
+      "displayName": "With Article Tables",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection604581baa040780c9354",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0bb6e856470c1abe9a87\",\"layouts\":[{\"id\":0,\"position\":{\"x\":468.88888888888886,\"y\":538.8888888888889,\"z\":0,\"width\":283.3333333333333,\"height\":83.33333333333333,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"DimMondelezCalendar.Min Week Selected\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Min Week Selected\"},\"Name\":\"DimMondelezCalendar.Min Week Selected\",\"NativeReferenceName\":\"Min Week Selected\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Min Week Selected\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 83.33,
+          "width": 283.33,
+          "x": 468.89,
+          "y": 538.89,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"189eddd1d5a7c39bb0db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":998.8888888888889,\"y\":520,\"z\":1000,\"width\":281.1111111111111,\"height\":90,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"DimMondelezCalendar.Max Week Selected\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Max Week Selected\"},\"Name\":\"DimMondelezCalendar.Max Week Selected\",\"NativeReferenceName\":\"Max Week Selected\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Max Week Selected\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.00,
+          "width": 281.11,
+          "x": 998.89,
+          "y": 520.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"46031d7e43751726c0c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":576.3844545484717,\"y\":141.37731904019117,\"z\":5000,\"width\":301.7862002588696,\"height\":281.395240781919,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CalendarHierarchy.Element\"},{\"queryRef\":\"CalendarDim.Date Range\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalendarDim\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"CalendarHierarchy\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date Range\"},\"Name\":\"CalendarDim.Date Range\",\"NativeReferenceName\":\"Date Range\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Element\"},\"Name\":\"CalendarHierarchy.Element\",\"NativeReferenceName\":\"Element\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 281.40,
+          "width": 301.79,
+          "x": 576.38,
+          "y": 141.38,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"4e2ff496acd0ccc12b83\",\"layouts\":[{\"id\":0,\"position\":{\"x\":17.672164880023896,\"y\":120.98635956324053,\"z\":4000,\"width\":383.3500381666722,\"height\":444.52291659752416,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"HierarchySlicer1458836712039\",\"projections\":{\"Fields\":[{\"queryRef\":\"CalendarHierarchy.Type\"},{\"queryRef\":\"CalendarHierarchy.Year\"},{\"queryRef\":\"CalendarHierarchy.Level\"},{\"queryRef\":\"CalendarHierarchy.Element\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalendarHierarchy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Type\"},\"Name\":\"CalendarHierarchy.Type\",\"NativeReferenceName\":\"Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"CalendarHierarchy.Year\",\"NativeReferenceName\":\"Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Level\"},\"Name\":\"CalendarHierarchy.Level\",\"NativeReferenceName\":\"Level\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Element\"},\"Name\":\"CalendarHierarchy.Element\",\"NativeReferenceName\":\"Element\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"'|~Custom selections~|~CY''2023~|*|*|~Custom selections~|~CY''2023~|~Week~|'\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalendarHierarchy\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Type\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Predefined selections'\"}},{\"Literal\":{\"Value\":\"'2 Days Prior'\"}}],[{\"Literal\":{\"Value\":\"'Predefined selections'\"}},{\"Literal\":{\"Value\":\"'Prior 2 Week'\"}}],[{\"Literal\":{\"Value\":\"'Predefined selections'\"}},{\"Literal\":{\"Value\":\"'Today'\"}}],[{\"Literal\":{\"Value\":\"'Predefined selections'\"}},{\"Literal\":{\"Value\":\"'Yesterday'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"hideMembers\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"ctrlSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 444.52,
+          "width": 383.35,
+          "x": 17.67,
+          "y": 120.99,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"aede827116cc053d420e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":547.7777777777777,\"y\":628.8888888888889,\"z\":3000,\"width\":281.1111111111111,\"height\":91.11111111111111,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"DimMondelezCalendar.Max Week Ending Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Max Week Ending Date\"},\"Name\":\"DimMondelezCalendar.Max Week Ending Date\",\"NativeReferenceName\":\"Max Week Ending Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Max Week Ending Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 91.11,
+          "width": 281.11,
+          "x": 547.78,
+          "y": 628.89,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"da8334a3e64bddca46d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":737.7777777777777,\"y\":535.5555555555555,\"z\":2000,\"width\":281.1111111111111,\"height\":91.11111111111111,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"DimMondelezCalendar.Min Week Ending Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimCompanyCalendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Min Week Ending Date\"},\"Name\":\"DimMondelezCalendar.Min Week Ending Date\",\"NativeReferenceName\":\"Min Week Ending Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Min Week Ending Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 91.11,
+          "width": 281.11,
+          "x": 737.78,
+          "y": 535.56,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
