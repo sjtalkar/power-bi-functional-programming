@@ -642,6 +642,11 @@
             "name": "Date Range",
             "expression": "COMBINEVALUES(\" - \", MIN(DimCompanyCalendar[Date]), MAX(DimCompanyCalendar[Date]))",
             "lineageTag": "b1c04a97-786d-49be-9741-270a2b42b741"
+          },
+          {
+            "name": "Version Control Measure",
+            "expression": "\"Testing Measure in version control\"",
+            "lineageTag": "172c180a-ce68-41d3-81f7-f18be13a542e"
           }
         ],
         "partitions": [
